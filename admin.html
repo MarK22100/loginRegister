@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body class="text-center">
+    <header>
+        <nav class="nav navbar bg-dark">
+            <ul class="">
+                <li><button class="btn bg-body" onclick="logOut()">LogOut</button></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>LISTA DE USUARIOS REGISTADOS</h1>
+    <article>
+        <div class="table-responsive">
+            <table class="table container justify-content-center">
+                <thead class="container">
+                    <tr class="row">
+                        <th class="col-4" >NOMBRE COMPLETO</th>
+                        <th class="col-4" >EMAIL</th>
+                        <th class="col-2" >ACCIONES</th>
+                    </tr>
+                </thead>
+                <tbody id="tableUsers" class="container">
+
+                </tbody>
+            </table>
+        </div>
+    </article>
+    <hr>
+    <h4>LISTA USUARIOS ADMINISTRADORES</h4>
+    <article>
+        <div class="table-responsive">
+            <table class="table container justify-content-center">
+                <thead class="container">
+                    <tr class="row">
+                        <th class="col-4" >NOMBRE COMPLETO</th>
+                        <th class="col-4" >EMAIL</th>
+                        <th class="col-2" >ACCIONES</th>
+                    </tr>
+                </thead>
+                <tbody id="tableAdmins" class="container">
+
+                </tbody>
+            </table>
+        </div>
+    </article>
+</body>
+<script type="module" src="/js/adminUser.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</html>
